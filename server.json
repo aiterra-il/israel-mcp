@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aiterra-il/israel-mcp",
+  "title": "Israel: companies, banks, tax, Hebrew",
+  "description": "Israeli Companies Registrar, bank branches, 2026 tax and payroll calculators, phones, Hebrew tools",
+  "websiteUrl": "https://www.aiterra.co.il/tools",
+  "repository": {
+    "url": "https://github.com/aiterra-il/israel-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "israel-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

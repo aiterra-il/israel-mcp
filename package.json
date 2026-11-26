@@ -1,0 +1,34 @@
+{
+  "name": "israel-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.aiterra-il/israel-mcp",
+  "description": "MCP server for Israel: Companies Registrar lookup, bank branches, 2026 tax and payroll calculators, phone numbers, Hebrew acronyms and a Hebrew SEO audit as tools for Claude, Cursor, VS Code and other MCP hosts",
+  "type": "module",
+  "bin": { "israel-mcp": "cli.js" },
+  "main": "./server.js",
+  "exports": {
+    ".": "./server.js"
+  },
+  "files": ["cli.js", "server.js", "tools.js", "public-fetch.js"],
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test test.js" },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "israel", "hebrew", "claude", "cursor", "ai-agents", "data.gov.il", "tax", "vat", "payroll", "רשם החברות", "מע״מ", "שכר נטו"],
+  "author": "Aiterra <info@aiterra.co.il> (https://www.aiterra.co.il)",
+  "license": "MIT",
+  "homepage": "https://www.aiterra.co.il/tools",
+  "repository": { "type": "git", "url": "git+https://github.com/aiterra-il/israel-mcp.git" },
+  "bugs": { "url": "https://github.com/aiterra-il/israel-mcp/issues" },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "hebrew-acronyms": "^1.0.0",
+    "hebrew-seo-audit": "^1.0.0",
+    "israel-bank-branches": "^1.0.0",
+    "israel-companies": "^1.0.0",
+    "israel-tax": "^1.0.0",
+    "israeli-phone": "^1.0.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.4.0"
+  }
+}
