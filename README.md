@@ -112,6 +112,10 @@ const server = createServer()
 
 אותם חישובים רצים גם בדפדפן, בלי התקנה, ב[כלים החינמיים של Aiterra](https://www.aiterra.co.il/tools).
 
+## איך זה עובד בפועל
+
+במאמר [שרת MCP ישראלי בקוד פתוח](https://www.aiterra.co.il/blog/israel-mcp-server) יש את התשובות שהכלים החזירו בבדיקה, זמני התגובה שמדדנו, ומה למדנו כשפרסמנו את השרת ב-MCP Registry הרשמי.
+
 ## מי עומד מאחורי זה
 
 [Aiterra](https://www.aiterra.co.il) היא סטודיו ישראלי שבונה סוכני AI, אוטומציות ואתרים לעסקים. את השרת כתבנו בשביל הסוכנים שאנחנו בונים ללקוחות, ופתחנו אותו לכולם.
@@ -159,6 +163,8 @@ For Claude Desktop and Cursor, add this to `mcpServers`:
 | `seo-audit` | SEO audit of a public page: title, description, `lang` and `dir`, structured data, AI crawler rules | yes |
 
 Registry data comes live from data.gov.il. `seo-audit` fetches the page you name plus `robots.txt` and `llms.txt` of the same site, and refuses local and private network addresses, also when a public page redirects to one. Tax and payroll results are estimates for tax year 2026, not tax advice. Set `ISRAEL_MCP_TIMEOUT_MS` to change the 15-second network timeout.
+
+Real tool answers, measured response times and what publishing to the official MCP Registry taught us are in the write-up (in Hebrew): [israel-mcp, an open-source Israeli MCP server](https://www.aiterra.co.il/blog/israel-mcp-server).
 
 Built by [Aiterra](https://www.aiterra.co.il), an Israeli studio for AI agents, automation and websites. The same calculators run in the browser at [aiterra.co.il/tools](https://www.aiterra.co.il/tools).
 
